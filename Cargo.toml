@@ -1,0 +1,24 @@
+[package]
+name = "ygod_gtk"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4"
+once_cell = "1.15.0"
+
+[dependencies.ygod_core]
+path = "../ygod_core"
+
+[dependencies.adw]
+features = ["v1_2"]
+package = "libadwaita"
+version = "0.2"
+
+[dependencies.gtk]
+package = "gtk4"
+version = "0.5"
+
+[build-dependencies.meml]
+git = "https://github.com/myuujiku/meml"
+rev = "fd7f52641b2198b1ff2076fd130b875e2e54f9f5"
